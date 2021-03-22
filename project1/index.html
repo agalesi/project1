@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="wrapper">
+    <!--Divided the thumbnails and images into two (2) Articles, with sections per image-->
+    <h1>Fish Characters</h1>
+
+    <article class="row">
+      <section class="thumbnails">
+        <img class="text cursor" src="imgs/atlantic_salmon.jpg" onclick="currentSlide(1)"
+          alt="The Salmon is pink on the inside, tough on the outside and likes to swim againt currents to find happiness.">
+      </section>
+      <section class="thumbnails">
+        <img class="text cursor" src="imgs/mahi.jpg" onclick="currentSlide(2)"
+          alt="The Mahi Mahi has a Hawaiin name and can be found everywhere; they live 7 years and are green and yellow.">
+      </section>
+      <section class="thumbnails">
+        <img class="text cursor" src="imgs/snapper.jpg" onclick="currentSlide(3)"
+          alt="The snapper is red on the inside and white on the inside when cooked; they can live to be over 50 when not caught.">
+      </section>
+      <section class="thumbnails">
+        <img class="text cursor" src="imgs/swordfish.jpg" onclick="currentSlide(4)"
+          alt="The swordfish is silver and grey and can live up to 9 years of age; they like warm water.">
+      </section>
+      <section class="thumbnails">
+        <img class="text cursor" src="imgs/tuna.jpg" onclick="currentSlide(5)"
+          alt="Tuna are warm-blooded fish, with red insides; they are found in all oceans and can reach 50 years of age.">
+      </section>
+      <!--Footer Area below, reference image-->
+
+    </article>
+
+    <article class="row">
+      <section class="slidenames">
+        <img src="imgs/atlantic_salmon.jpg">
+      </section>
+
+      <section class="slidenames">
+        <img src="imgs/mahi.jpg">
+      </section>
+
+      <section class="slidenames">
+        <img src="imgs/snapper.jpg">
+      </section>
+
+      <section class="slidenames">
+        <img src="imgs/swordfish.jpg">
+      </section>
+
+      <section class="slidenames">
+        <img src="imgs/tuna.jpg">
+      </section>
+
+    </article>
+
+    <footer class="caption-box">
+      <p id="caption"></p>
+    </footer>
+
+  </main>
+  <!--the JavaScript file is attached after the first two (2) articles or div blocks to load after the page is loaded, for the syncronous nature of JavaScript-->
+
+  <script src="js/script.js">
+  </script>
+
+</body>
+
+</html>

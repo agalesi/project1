@@ -1,0 +1,106 @@
+/* Initial comment: The box-sizing removed the default browser default margins to zero. This gives the web designer more control. 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*   @media is used to provide a responsive design during device changes (mobile, tablet or larger screen, specifically for the font; the 3rd @media affects the footnote caption.
+*/
+
+@media (min-width:1px) and (max-width: 649px) {
+    
+  h1 {
+  font-size: 150%;
+    
+  }
+}
+
+@media (min-width:650px) and (max-width: 800px) {
+    
+  h1  {
+  font-size: 220%;
+  }
+}
+
+@media (min-width:801px) and (max-width: 3000px) {
+  h1 {
+    font-size: 300%;
+  } 
+  footer.caption-box  {
+  font-size: 140%;
+  }
+}
+
+/*  
+The H1 is for the top title.
+*/
+
+h1 {text-align: center;
+color:  white;
+}
+
+/*body affects everything visually with the page.*/
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: green;
+}
+
+/* with 100% width for the image, the picture will stretch to his largest size.  */
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* The wrapper is just a container class to set the margins for all the items in the body.*/
+
+.wrapper {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.slidenames {
+display: none;
+}
+
+/* Adds a pointer over thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* text below main large image, aligned left */
+.caption-box {
+  text-align: left;
+  background-color: rgb(2, 0, 10);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 5 columns at 20% each" */
+.thumbnails {
+  float: left;
+  width: 20%;
+}
+
+/* Adds a transparency effect for thumbnails images when not active */
+.text {
+opacity: 0.6;
+border: solid yellow;
+}
+
+/*Default for thumbnail onclick or on hover at 1 opacity. */
+.active,
+.text:hover {
+opacity: 1;
+  border: solid black;
+}
